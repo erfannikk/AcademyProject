@@ -1,0 +1,35 @@
+.ever {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .box {
+    width: 20rem;
+    height: 18rem;
+    background-color: white;
+    border-radius: 11px;
+    padding: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    .example-container {
+      display: flex;
+      margin-top: 1rem;
+      justify-content: center;
+      direction: rtl;
+      height: 4.5rem;
+    }
+    .example-button-row {
+      display: flex;
+      justify-content: center;
+      button {
+        width: 13.2rem;
+        height: 2.6rem;
+        border: 0;
+        border-radius: 6px;
+        background-color: #1e22fc;
+        color: white;
+        font-size: 15px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+    }
+  }
+}
