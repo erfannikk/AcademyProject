@@ -6,6 +6,8 @@
         <input
           matInput
           [formControl]="name"
+          [(ngModel)]="firstname"
+          name="firstname"
           (blur)="updateErrorMessage()"
           required
         />
@@ -19,7 +21,8 @@
         <mat-label> پسورد </mat-label>
         <input
           matInput
-          [formControl]="name"
+          [formControl]="password"
+          [(ngModel)]="pass"
           (blur)="updateErrorMessage2()"
           required
         />
@@ -29,7 +32,7 @@
       </mat-form-field>
     </div>
     <div class="example-button-row">
-      <button mat-raised-button>Basic</button>
+      <button mat-raised-button (click)="Login()"> ورود </button>
     </div>
   </div>
 </div>
