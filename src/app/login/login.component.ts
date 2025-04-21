@@ -44,7 +44,7 @@ export class LoginComponent {
       this.errorMessage.set('');
     }
   }
-  readonly password = new FormControl('',);
+  readonly password = new FormControl('');
 
   errorMessage2 = signal('');
 
@@ -57,7 +57,7 @@ export class LoginComponent {
       this.errorMessage2.set('');
     }
   }
-
+  
   Login() {
      this.userService.setUser(this.firstname,this.pass);
      this.router.navigate(['/home'])

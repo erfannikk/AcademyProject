@@ -4,14 +4,12 @@ import { Injectable, signal } from '@angular/core';
   providedIn: 'root',
 })
 export class UserService {
-  private userSignal = signal<{ firstname: string; pass: string } | null>(
-    null
-  );
+  private _user = signal<{ firstname: string; pass: string } | null>(null);
   setUser(firstname: string, pass: string) {
-    this.userSignal.set({ firstname , pass })
+    
   }
 
   get user() {
-    return this.userSignal.asReadonly();
+    return this._user;
   }
 }

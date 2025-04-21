@@ -1,9 +1,8 @@
-<div class="ever">
-
-  <div class="box">
-      @if ( user ) {
-        <p> سلام , {{ fullName() }} </p>
-      }
-  </div>
-
+<div class="header">
+  <app-header (toggle)="toggleSidebar()"></app-header>
+</div>
+<div class="main">
+  @if (sidebarOpen()) {
+  <app-sidebar></app-sidebar>
+  }
 </div>
